@@ -3,19 +3,25 @@ body{
     padding-right: 20px;
 }
 
+/*
 #forNewItem{
     margin-left: auto;
     margin-right: auto;
     display:block;
 }
+*/
 
-.visible{
+.visibleForm{
     display:inline-block;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    background-color: #eeeeee;
 }
 
-.notVisible{
+.notVisibleForm{
     display:none;
 }
 

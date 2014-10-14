@@ -30,8 +30,15 @@ $(document).ready(function(){
     reload();
 
     $('#forNewItem').click(function(){
-        $('.newItemForm').removeClass("notVisible");
-        $('.newItemForm').addClass("visible"); 
+        if ($('.newItemForm').hasClass("notVisibleForm")){
+            $('.newItemForm').removeClass("notVisibleForm");
+            $('.newItemForm').addClass("visibleForm");
+        }
+        else if ($('.newItemForm').hasClass("visibleForm")){
+            $('.newItemForm').removeClass("visibleForm");
+            $('.newItemForm').addClass("notVisibleForm");
+        }
+        
     });
 });
 
