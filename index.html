@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>   
+        <link type="text/css" rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./index.js"></script>
+        
+    </head>
+    
+    <div id="formDiv">
+    <form>
+        <div>
+            Type: 
+            <select class="prodInfo" id="type">
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+                <option value="furniture">Furniture</option>
+                <option value="other">Other</option> 
+            </select>
+        </div>
+        <div>
+            Title: 
+            <input class="prodInfo" id="brand" type="text" placeholder="Entire a short description of the Product"/>
+        </div>
+        <div>
+            Condition:
+            <select class="prodInfo" id="condition">
+                <option value="likeNew">Like New</option>
+                <option value="excellent">Excellent</option>
+                <option value="great">Great</option>
+                <option value="good">Good</option>
+                <option value="okay">Okay</option>
+                <option value="passable">Passable</option> 
+                <option value="poor">Poor</option> 
+                <option value="fallingApart">Falling Apart</option> 
+                <option value="junk">Junk</option> 
+                <option value="other">Other</option> 
+            </select>
+        </div>
+        <div>
+            Description:
+            <textarea class="prodInfo" id="description"></textarea>
+        <div>
+            Price:
+            <input class="prodInfo" id="price" type="text">
+        </div>
+        <input type="submit" value="submit">
+    </form>
+    </div>
+    
+    <div>
+        <div>Items For Sale:</div>
+        <div id="products"></div>
+        
+    </div>
+    
+    
+    
+    
+    
+</body>
+</html>
