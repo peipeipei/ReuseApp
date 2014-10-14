@@ -3,13 +3,6 @@ body{
     padding-right: 20px;
 }
 
-/*
-#forNewItem{
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-}
-*/
 
 .visibleForm{
     display:inline-block;
@@ -18,11 +11,29 @@ body{
     padding: 10px;
     margin-top: 10px; 
     margin-bottom: 10px;
-    background-color: #eeeeee;
+    background-color: #dddddd;
 }
 
 .notVisibleForm{
     display:none;
 }
+
+.productInfo{
+    width: 30%;
+    float:left;
+    background-color: #eeeeee;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left: 10px;
+    margin-right:10px;
+    padding: 5px;
+}
+
+#displayBrand{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+
 
 

@@ -127,15 +127,16 @@ function handleResponse(responseText, type){
 		if (Number(message.time) > 0) {
 			
 			var div = document.createElement("div");
+            div.className = "productInfo";
 			message.timeDate = new Date(Number(message.time))
 			var date = message.timeDate.toLocaleString();
 			
-			var line = "<h2>"+message.brand+"</h2>";
-			line += "<p><b>Price: </b>"+message.price+"</b>";
-			line += "<p><b>Condition: </b>"+message.condition+"</b>";
-            line += "<p><b>Brand: </b>"+message.description+"</b>";
-			line += "<p><b>Type: </b>"+itemType+"</b>";
-            line += "<p><b>Location: </b>"+message.location+"</b>";
+			var line = "<div class='displayInfo' id='displayBrand'>"+message.brand+"</div>";
+			line += "<div>Price: "+message.price+"</div>";
+			line += "<div>Condition: "+message.condition+"</div>";
+            line += "<div>Brand: "+message.description+"</div>";
+			line += "<div>Type: "+itemType+"</div>";
+            line += "<div>Location: "+message.location+"</div>";
 
 			var link = document.createElement("a");
 
