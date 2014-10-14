@@ -28,6 +28,11 @@ var etag=null;
 $(document).ready(function(){
     //to make things easier to debug 
     reload();
+
+    $('#forNewItem').click(function(){
+        $('.newItemForm').removeClass("notVisible");
+        $('.newItemForm').addClass("visible"); 
+    });
 });
 
 
@@ -203,6 +208,7 @@ function newmsg() {
     
     
 }
+
 
 
 

@@ -13,18 +13,24 @@
     
     <h1>Crosscloud Sales App</h1>
     
-    <form action="#" >
-	   <p style="float:right">Enter Username:<input id="podurl" type="text" value="http://reuse.fakepods.com" /><input type="submit" value="Go" onclick='reload();return false;'  />		
-	</form>
+    <div>
+        <form action="#" >
+           <p style="float:right">Enter Username:<input id="podurl" type="text" value="http://reuse.fakepods.com" /><input type="submit" value="Go" onclick='reload();return false;'  />		
+        </form>
+    </div>
     
+    <br>
     
-    <button>Submit an Item for Sale</button>
+    <div>
+        <button id="forNewItem">Submit an Item for Sale</button>
+    </div>
+    
     
     <div id="formDiv">
-    <form id = "entry" action="#" onsubmit='newmsg();return false;' >
-        <div>
+    <form class="newItemForm notVisible" id = "entry" action="#" onsubmit='newmsg();return false;' >
+        <div class="prodInfo">
             Type: 
-            <select class="prodInfo" id="type">
+            <select id="type">
                 <option value="electronics">Electronics</option>
                 <option value="clothing">Clothing</option>
                 <option value="books">Books</option>
@@ -32,13 +38,13 @@
                 <option value="other">Other</option> 
             </select>
         </div>
-        <div>
+        <div class="prodInfo">
             Title: 
-            <input class="prodInfo" id="brand" type="text" placeholder="Entire a short description of the Product"/>
+            <input id="brand" type="text" placeholder="Entire a short description of the Product"/>
         </div>
-        <div>
+        <div class="prodInfo">
             Condition:
-            <select class="prodInfo" id="condition">
+            <select id="condition">
                 <option value="1">Like New</option>
                 <option value="2">Excellent</option>
                 <option value="3">Great</option>
@@ -51,20 +57,22 @@
                 <option value="10">Other</option> 
             </select>
         </div>
-        <div>
+        <div class="prodInfo">
             Description:
-            <textarea class="prodInfo" id="description"></textarea>
-        <div>
+            <textarea id="description"></textarea>
+        <div  class="prodInfo">
             Price:
-            <input class="prodInfo" id="price" type="text">
+            <input id="price" type="text">
         </div>
-        <div>
+        <div class="prodInfo">
             Location:
-            <input class="prodInfo" id="location" type="text" placeholder="Pick-up Location"/>
+            <input id="location" type="text" placeholder="Pick-up Location"/>
         </div>
         <input type="submit" value="submit">
     </form>
     </div>
+    
+        
     
     <div>
         <div>Items For Sale:</div>

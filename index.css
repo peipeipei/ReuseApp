@@ -1,0 +1,22 @@
+body{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#forNewItem{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.visible{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notVisible{
+    display:none;
+}
+
+
