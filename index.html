@@ -10,8 +10,18 @@
         
     </head>
     
+    
+    <h1>Crosscloud Sales App</h1>
+    
+    <form action="#" >
+	   <p style="float:right">Enter Username:<input id="podurl" type="text" value="http://reuse.fakepods.com" /><input type="submit" value="Go" onclick='reload();return false;'  />		
+	</form>
+    
+    
+    <button>Submit an Item for Sale</button>
+    
     <div id="formDiv">
-    <form>
+    <form id = "entry" action="#" onsubmit='newmsg();return false;' >
         <div>
             Type: 
             <select class="prodInfo" id="type">
@@ -29,16 +39,16 @@
         <div>
             Condition:
             <select class="prodInfo" id="condition">
-                <option value="likeNew">Like New</option>
-                <option value="excellent">Excellent</option>
-                <option value="great">Great</option>
-                <option value="good">Good</option>
-                <option value="okay">Okay</option>
-                <option value="passable">Passable</option> 
-                <option value="poor">Poor</option> 
-                <option value="fallingApart">Falling Apart</option> 
-                <option value="junk">Junk</option> 
-                <option value="other">Other</option> 
+                <option value="1">Like New</option>
+                <option value="2">Excellent</option>
+                <option value="3">Great</option>
+                <option value="4">Good</option>
+                <option value="5">Okay</option>
+                <option value="6">Passable</option> 
+                <option value="7">Poor</option> 
+                <option value="8">Falling Apart</option> 
+                <option value="9">Junk</option> 
+                <option value="10">Other</option> 
             </select>
         </div>
         <div>
@@ -47,6 +57,10 @@
         <div>
             Price:
             <input class="prodInfo" id="price" type="text">
+        </div>
+        <div>
+            Location:
+            <input class="prodInfo" id="location" type="text" placeholder="Pick-up Location"/>
         </div>
         <input type="submit" value="submit">
     </form>
