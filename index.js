@@ -134,7 +134,7 @@ function handleResponse(responseText, type){
 			var line = "<div class='displayInfo' id='displayBrand'>"+message.brand+"</div>";
 			line += "<div>Price: "+message.price+"</div>";
 			line += "<div>Condition: "+message.condition+"</div>";
-            line += "<div>Brand: "+message.description+"</div>";
+            line += "<div>Description: "+message.description+"</div>";
 			line += "<div>Type: "+itemType+"</div>";
             line += "<div>Location: "+message.location+"</div>";
 
