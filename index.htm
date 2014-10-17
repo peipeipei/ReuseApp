@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>   
+        <link type="text/css" rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="./ReuseApp_files/crosscloud.js"></script>
+        <script src="./ReuseApp_files/jquery-2.1.1.min.js"></script>
+        <script src="./ReuseApp_files/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./index.js"></script>
+        
+    </head>
+    
+    
+    <h1>Crosscloud Sales App</h1>
+    
+    <div>
+        <!--<form action="#" >
+           <p style="float:right">Enter Username:<input id="podurl" type="text" value="http://reuse.fakepods.com" /><input type="submit" value="Go" onclick='reload();return false;'  />		
+        </form>!-->
+    </div>
+    
+    <br>
+    
+
+    <div id="queryLinks">
+        <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" id="electronicsLink">Electronics</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" id="booksLink">Books</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" id="clothingLink">Clothing</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" id="furnitureLink">Furniture</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" id="otherLink">Other</button>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    
+    <div id="formDiv">
+        
+        <div>
+            <button id="forNewItem">Submit an Item For Sale</button>
+        </div>
+        
+    <form class="newItemForm notVisibleForm" id = "entry" action="#" >
+        <div class="prodInfo">
+            Type: 
+            <select id="type" onclick = "alert('hi');">
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+                <option value="furniture">Furniture</option>
+                <option value="other">Other</option> 
+            </select>
+        </div>
+        <div class="prodInfo">
+            Title: 
+            <input id="brand" type="text" placeholder="Entire a short description of the Product"/>
+        </div>
+        <div class="prodInfo">
+            Condition:
+            <select id="condition">
+                <option value="1">Like New</option>
+                <option value="2">Excellent</option>
+                <option value="3">Great</option>
+                <option value="4">Good</option>
+                <option value="5">Okay</option>
+                <option value="6">Passable</option> 
+                <option value="7">Poor</option> 
+                <option value="8">Falling Apart</option> 
+                <option value="9">Junk</option> 
+                <option value="10">Other</option> 
+            </select>
+        </div>
+        <div class="prodInfo">
+            Description:
+            <textarea id="description"></textarea>
+        <div  class="prodInfo">
+            Price:
+            <input id="price" type="text">
+        </div>
+        <div class="prodInfo">
+            Location:
+            <input id="location" type="text" placeholder="Pick-up Location"/>
+        </div>
+        <input type="submit" value="submit" id = "submit">
+    </form>
+    </div>
+    
+        
+    
+    <div>
+        <div>Items For Sale:</div>
+        <div id="products"></div>
+        
+    </div>
+    
+    
+<div style="position: fixed; right: 4px; top: 4px; width: 20px; height: 10px;"><iframe src="./ReuseApp_files/switcher.htm" allowtransparency="false" scrolling="no" style="overflow: hidden; box-shadow: rgb(0, 0, 0) 2px 2px 6px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; padding: 0px; margin: 0px; border: none; width: 20px; height: 10px;"></iframe></div></div>
+    
+    
+    
+</body>
+</html>
