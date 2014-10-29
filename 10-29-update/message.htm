@@ -1,0 +1,44 @@
+<head>   
+        <link type="text/css" rel="stylesheet" href="message.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="http://crosscloud.org/0.1.1/crosscloud.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./message.js"></script>
+        
+    </head>
+    
+    
+    <h1>Crosscloud Sales App -- Messages</h1>
+    <center>
+    <a href = "index.htm"><i class = "glyphicon glyphicon-home"></i></a>
+     <a href = "message.htm"><i class = "glyphicon glyphicon-envelope"></i></a>
+ </center>
+ <div id="formDiv">
+        
+        <!--<div>
+            <button id="forNewItem">Submit an Item For Sale</button>
+        </div>!-->
+    <center>
+    <form class="newMsgForm" id = "entry" action="#" >
+      <h2>Send a Message</h2>
+        <div class="To">
+            To: 
+            <input id="to" type="text" placeholder="reuse.fakepods.com"/>
+        </div>
+        <div class="Message">
+            Message: 
+            <input id="msg" type="text" size = "50" placeholder="Hi, I am interested in your product"/>
+        </div>
+       
+        <input type="submit" value="submit" id = "submit">
+    </form>
+    </div>
+</center>
+
+    <div id = "yourmessages">
+        <b>Your Messages: </b>
+    </div>
+
+    <div id = "reusePrivMessage">
+    </div>
